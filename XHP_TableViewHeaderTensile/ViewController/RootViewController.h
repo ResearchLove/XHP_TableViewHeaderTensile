@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NavigationController.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
+@property (strong,nonatomic) NavigationController *naviCon;
+@property (strong,nonatomic) UITableView *tableView;
+@property (strong,nonatomic) UIView *headerView;
+@property (strong,nonatomic) UIImageView *imageView;
 
 @end

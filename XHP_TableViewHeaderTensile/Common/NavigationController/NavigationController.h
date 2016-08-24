@@ -10,4 +10,8 @@
 
 @interface NavigationController : UINavigationController
 
+@property (strong,nonatomic) UIView *alphaView;
+
+-(void)hideNavigationBar:(BOOL)isHide;
+
 @end
